@@ -1,0 +1,46 @@
+.login-page{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#0f172a;
+}
+
+.login-card{
+
+    width:420px;
+
+    background:#1e293b;
+
+    border-radius:20px;
+
+    padding:40px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+
+    text-align:center;
+}
+
+.logo{
+
+    color:white;
+
+    font-size:42px;
+
+    margin-bottom:10px;
+}
+
+.tagline{
+
+    color:#94a3b8;
+
+    margin-bottom:35px;
+}
+
+.login-card h2{
+
+    color:white;
+
+    margin-bottom:30px;
+}

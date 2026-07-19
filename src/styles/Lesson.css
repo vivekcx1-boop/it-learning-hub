@@ -1,0 +1,63 @@
+.lesson-card{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#1e293b;
+padding:22px;
+margin-bottom:18px;
+border-radius:16px;
+border:1px solid rgba(255,255,255,.06);
+transition:.3s;
+}
+
+.lesson-card:hover{
+transform:translateY(-4px);
+box-shadow:0 15px 35px rgba(37,99,235,.25);
+}
+
+.lesson-left{
+display:flex;
+align-items:center;
+gap:18px;
+}
+
+.lesson-number{
+width:55px;
+height:55px;
+border-radius:50%;
+background:#2563eb;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:22px;
+font-weight:bold;
+color:white;
+}
+
+.lesson-left h3{
+color:white;
+font-size:22px;
+margin-bottom:6px;
+}
+
+.lesson-left p{
+color:#94a3b8;
+font-size:15px;
+}
+
+.lesson-btn{
+padding:12px 24px;
+border:none;
+border-radius:10px;
+background:#2563eb;
+color:white;
+font-size:16px;
+font-weight:600;
+cursor:pointer;
+transition:.3s;
+}
+
+.lesson-btn:hover{
+background:#1d4ed8;
+transform:scale(1.05);
+}
