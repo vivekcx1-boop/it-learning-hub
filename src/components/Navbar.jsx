@@ -1,4 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
+import "../styles/Navbar.css";
 import { signOut } from "firebase/auth";
 import { auth } from "../firebase";
 
@@ -11,20 +12,43 @@ function Navbar() {
   };
 
   return (
-    <nav className="navbar">
-      <h2>🚀 IT Learning HUB</h2>
+  <nav className="navbar">
 
-      <div className="menu">
-        <Link to="/">Home</Link>
-        <Link to="/course">Courses</Link>
-        <Link to="/dashboard">Dashboard</Link>
+    <Link to="/" className="logo">
+  🚀 IT Learning HUB
+</Link>
 
-        <button className="nav-btn" onClick={handleLogout}>
-          Logout
-        </button>
+    <div className="menu">
+      <Link to="/">Home</Link>
+      <Link to="/course">Courses</Link>
+      <Link to="/dashboard">Dashboard</Link>
+    </div>
+
+    <div className="actions">
+
+      <button className="icon-btn">
+        🌙
+      </button>
+
+      <button className="icon-btn">
+        🔔
+      </button>
+
+      <div className="avatar">
+        V
       </div>
-    </nav>
-  );
+
+      <button
+        className="nav-btn"
+        onClick={handleLogout}
+      >
+        Logout
+      </button>
+
+    </div>
+
+  </nav>
+);
 }
 
 export default Navbar;
